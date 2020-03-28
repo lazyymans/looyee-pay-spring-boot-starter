@@ -1,6 +1,5 @@
 package com.looyee.wxpay.notify;
 
-
 import com.looyee.notify.PayNotifyCallback;
 import com.looyee.wxpay.entity.WxPayNotifyRes;
 

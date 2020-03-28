@@ -29,6 +29,9 @@ public class SpringBootUtil implements ApplicationContextAware {
         return applicationContext;
     }
 
+    public static <T> String getBeanName(Class<T> clazz) {
+        return getApplicationContext().getBeanNamesForType(clazz)[0];
+    }
 
     //通过name获取 Bean.
     public static Object getBean(String name) {

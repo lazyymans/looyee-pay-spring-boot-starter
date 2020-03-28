@@ -33,7 +33,7 @@ public class WxPayNotify {
 
 
     public String doNotifyBusiness(HttpServletRequest request, String key) {
-        Boolean flag = false;
+        boolean flag = false;
         try {
             String xmlString = WeixinUtil.inputStreamToString(request.getInputStream());
             log.info("微信回调生成的返回数据 result = {}", xmlString);

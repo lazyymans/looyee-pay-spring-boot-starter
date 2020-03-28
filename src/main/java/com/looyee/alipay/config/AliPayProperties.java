@@ -22,7 +22,13 @@ public class AliPayProperties {
     @NotNull
     private String alipayPublicKey;
 
-    private String notify;
+    private String notifyUrl;
+
+    private String returnUrl;
+
+    private String billFileZipPath;
+
+    private String billFileUnZipPath;
 
     public String getAppId() {
         return appId;
@@ -48,11 +54,35 @@ public class AliPayProperties {
         this.alipayPublicKey = alipayPublicKey;
     }
 
-    public String getNotify() {
-        return notify;
+    public String getNotifyUrl() {
+        return notifyUrl;
     }
 
-    public void setNotify(String notify) {
-        this.notify = notify;
+    public void setNotifyUrl(String notifyUrl) {
+        this.notifyUrl = notifyUrl;
+    }
+
+    public String getReturnUrl() {
+        return returnUrl;
+    }
+
+    public void setReturnUrl(String returnUrl) {
+        this.returnUrl = returnUrl;
+    }
+
+    public String getBillFileZipPath() {
+        return billFileZipPath;
+    }
+
+    public void setBillFileZipPath(String billFileZipPath) {
+        this.billFileZipPath = billFileZipPath;
+    }
+
+    public String getBillFileUnZipPath() {
+        return billFileUnZipPath;
+    }
+
+    public void setBillFileUnZipPath(String billFileUnZipPath) {
+        this.billFileUnZipPath = billFileUnZipPath;
     }
 }

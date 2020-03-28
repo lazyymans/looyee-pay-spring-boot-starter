@@ -7,8 +7,6 @@ import com.looyee.wxpay.common.Signature;
 import com.looyee.wxpay.common.WxPayUtil;
 import com.looyee.wxpay.entity.*;
 import com.looyee.wxpay.service.RequsetService;
-import lombok.Getter;
-import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,8 +15,6 @@ import org.springframework.stereotype.Component;
 import java.util.ArrayList;
 import java.util.List;
 
-@Getter
-@Setter
 @Slf4j
 @Component
 public class WxPayBusiness {

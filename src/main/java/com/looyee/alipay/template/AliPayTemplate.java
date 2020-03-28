@@ -52,7 +52,6 @@ public class AliPayTemplate {
             payBusiness.execute(request, listener);
         } catch (AlipayApiException e) {
             log.error("", e);
-            return null;
         }
         return listener;
     }
@@ -72,7 +71,6 @@ public class AliPayTemplate {
             payBusiness.execute(request, listener);
         } catch (AlipayApiException e) {
             log.error("", e);
-            return null;
         }
         return listener;
     }
@@ -92,7 +90,6 @@ public class AliPayTemplate {
             payBusiness.sdkExecute(request, listener);
         } catch (AlipayApiException e) {
             log.error("", e);
-            return null;
         }
         return listener;
     }
@@ -112,7 +109,6 @@ public class AliPayTemplate {
             payBusiness.pageExecute(request, listener);
         } catch (AlipayApiException e) {
             log.error("", e);
-            return null;
         }
         return listener;
     }
@@ -132,7 +128,6 @@ public class AliPayTemplate {
             payBusiness.pageExecute(request, listener);
         } catch (AlipayApiException e) {
             log.error("", e);
-            return null;
         }
         return listener;
     }
@@ -162,7 +157,6 @@ public class AliPayTemplate {
             payBusiness.execute(request, listener);
         } catch (AlipayApiException e) {
             log.error("", e);
-            return null;
         }
         return listener;
     }
@@ -182,7 +176,6 @@ public class AliPayTemplate {
             payBusiness.execute(request, listener);
         } catch (AlipayApiException e) {
             log.error("", e);
-            return null;
         }
         return listener;
     }
@@ -202,7 +195,6 @@ public class AliPayTemplate {
             payBusiness.execute(request, listener);
         } catch (AlipayApiException e) {
             log.error("", e);
-            return null;
         }
         return listener;
     }
@@ -222,7 +214,6 @@ public class AliPayTemplate {
             payBusiness.execute(request, listener);
         } catch (AlipayApiException e) {
             log.error("", e);
-            return null;
         }
         return listener;
     }
@@ -242,7 +233,6 @@ public class AliPayTemplate {
             payBusiness.execute(request, listener);
         } catch (AlipayApiException e) {
             log.error("", e);
-            return null;
         }
         return listener;
     }
@@ -262,7 +252,6 @@ public class AliPayTemplate {
             payBusiness.pageExecute(request, listener);
         } catch (AlipayApiException e) {
             log.error("", e);
-            return null;
         }
         return listener;
     }
@@ -282,7 +271,6 @@ public class AliPayTemplate {
             payBusiness.execute(request, listener);
         } catch (AlipayApiException e) {
             log.error("", e);
-            return null;
         }
         return listener;
     }
@@ -302,7 +290,6 @@ public class AliPayTemplate {
             payBusiness.execute(request, listener);
         } catch (AlipayApiException e) {
             log.error("", e);
-            return null;
         }
         return listener;
     }
@@ -322,7 +309,6 @@ public class AliPayTemplate {
             payBusiness.execute(request, listener);
         } catch (AlipayApiException e) {
             log.error("", e);
-            return null;
         }
         return listener;
     }
@@ -342,7 +328,6 @@ public class AliPayTemplate {
             payBusiness.execute(request, listener);
         } catch (AlipayApiException e) {
             log.error("", e);
-            return null;
         }
         return listener;
     }

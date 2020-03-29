@@ -1,7 +1,7 @@
 package com.looyee.wxpay.config;
 
 import com.looyee.wxpay.proxy.CglibProxyFactory;
-import com.looyee.wxpay.service.RequsetService;
+import com.looyee.wxpay.service.RequestService;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 import org.springframework.validation.annotation.Validated;
@@ -13,7 +13,7 @@ import javax.validation.constraints.NotNull;
 @ConfigurationProperties(prefix = "looyee.pay.wx")
 public class WxPayProperties {
 
-    private static final String DEFAULT_REQUEST_SERVICE = "com.looyee.wxpay.service.impl.RequsetServiceImpl";
+    private static final String DEFAULT_REQUEST_SERVICE = "com.looyee.wxpay.service.impl.RequestServiceImpl";
 
     @Valid
     @NotNull
@@ -42,9 +42,9 @@ public class WxPayProperties {
     private String request = DEFAULT_REQUEST_SERVICE;
 
     @Bean
-    public RequsetService requsetService() throws ClassNotFoundException {
+    public RequestService requestService() throws ClassNotFoundException {
         Class<?> clazz = Class.forName(request);
-        RequsetService proxyRequestService = (RequsetService) new CglibProxyFactory().getProxyInstance(clazz);
+        RequestService proxyRequestService = (RequestService) new CglibProxyFactory().getProxyInstance(clazz);
         return proxyRequestService;
     }
 

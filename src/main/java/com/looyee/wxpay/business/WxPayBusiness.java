@@ -6,7 +6,7 @@ import com.looyee.wxpay.common.JsonUtil;
 import com.looyee.wxpay.common.Signature;
 import com.looyee.wxpay.common.WxPayUtil;
 import com.looyee.wxpay.entity.*;
-import com.looyee.wxpay.service.RequsetService;
+import com.looyee.wxpay.service.RequestService;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +20,7 @@ import java.util.List;
 public class WxPayBusiness {
 
     @Autowired(required = false)
-    private RequsetService requsetService;
+    private RequestService requestService;
 
     /**
      * 统一执行微信请求
@@ -42,7 +42,7 @@ public class WxPayBusiness {
 
         Long costTimeStart = System.currentTimeMillis();
         //发送请求
-        payResultString = requsetService.sendPost(requestUrl, req, cret);
+        payResultString = requestService.sendPost(requestUrl, req, cret);
         Long costTimeEnd = System.currentTimeMillis();
         log.info("请求耗时： {}毫秒", (costTimeEnd - costTimeStart));
 

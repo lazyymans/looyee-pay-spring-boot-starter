@@ -7,7 +7,7 @@ import org.apache.http.client.config.RequestConfig;
  * 本服务内置了一个默认的请求示例类，若使用者想自己定制话
  * 可以自己实现RequestService 接口，并修改 yml 文件中的 request 值
  */
-public interface RequsetService {
+public interface RequestService {
 
     /**
      * 微信统一请求Service

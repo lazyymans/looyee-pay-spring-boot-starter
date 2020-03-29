@@ -1,6 +1,6 @@
 package com.looyee.wxpay.service.impl;
 
-import com.looyee.wxpay.service.RequsetService;
+import com.looyee.wxpay.service.RequestService;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.DomDriver;
 import com.thoughtworks.xstream.io.xml.XmlFriendlyNameCoder;
@@ -30,7 +30,7 @@ import java.security.KeyStore;
 @Slf4j
 @Setter
 @Getter
-public class RequsetServiceImpl implements RequsetService {
+public class RequestServiceImpl implements RequestService {
 
     // 表示请求器是否已经做了初始化工作
     private boolean hasInit = false;

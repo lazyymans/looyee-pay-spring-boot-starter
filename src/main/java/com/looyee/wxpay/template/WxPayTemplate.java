@@ -7,12 +7,14 @@ import com.looyee.wxpay.listener.*;
 import com.looyee.wxpay.notify.WxPayNotify;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
 import java.io.File;
 
 @Slf4j
+@ConditionalOnBean(WxPayBusiness.class)
 @Component
 public class WxPayTemplate {
 

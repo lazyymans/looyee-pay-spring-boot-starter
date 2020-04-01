@@ -7,19 +7,22 @@ import com.looyee.wxpay.common.Signature;
 import com.looyee.wxpay.common.WxPayUtil;
 import com.looyee.wxpay.entity.*;
 import com.looyee.wxpay.service.RequestService;
+import com.paypal.base.rest.APIContext;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.stereotype.Component;
 
 import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
+@ConditionalOnBean(RequestService.class)
 @Component
 public class WxPayBusiness {
 
-    @Autowired(required = false)
+    @Autowired
     private RequestService requestService;
 
     /**

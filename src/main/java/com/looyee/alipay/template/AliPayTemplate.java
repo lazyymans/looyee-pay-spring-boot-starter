@@ -14,6 +14,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.io.FileUtils;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.http.HttpServletRequest;
@@ -22,13 +23,14 @@ import java.io.IOException;
 import java.util.Date;
 
 @Slf4j
+@ConditionalOnBean(AliPayBusiness.class)
 @Component
 public class AliPayTemplate {
 
     @Autowired
     private AliPayBusiness payBusiness;
 
-    @Autowired(required = false)
+    @Autowired
     private AliPayProperties payProperties;
 
     @Autowired
